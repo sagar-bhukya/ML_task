@@ -62,8 +62,3 @@ def predict(item: Item):
     predicted_internal_status = list(internal_status_mapping.keys())[np.argmax(prediction)]
     return {"externalStatus": external_status, "predictedInternalStatus": predicted_internal_status}
 
-# Testing and Validation (Manual testing required)
-# Run the FastAPI app and send POST requests to the /predict/ endpoint with externalStatus in the request body
-
-# For bonus: Deployment
-# Deploy the FastAPI app to a platform like Heroku or AWS and obtain the deployed API URL
